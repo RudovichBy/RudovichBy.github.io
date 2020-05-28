@@ -1,0 +1,107 @@
+
+.purple-theme .question {
+    background-color: #7e57c2;
+    color: #fff;
+}
+.question {
+    display: table;
+    margin: 0;
+    width: 100%;
+    height: 142px;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    color: #616161;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+.question span {
+    display: table-cell;
+    padding: 0 24px;
+    vertical-align: middle;
+}
+.purple-theme .question {
+    color: #fff;
+}
+.answers, .answers > div {
+    position: relative;
+    padding: 40px 24px 48px;
+}
+.answers .fab {
+    position: absolute;
+    top: -28px;
+    right: 24px;
+}
+.fab {
+    width: 56px;
+    height: 56px;
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #555;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 27px;
+    font-family: "icomoon",cursive;
+    line-height: 1;
+    cursor: pointer;
+    transition: all .3s;
+}
+.card, .fab {
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+}
+
+
+.label-box {
+  position: relative;
+  width: 270px;
+}
+
+.label-box::before,
+.label-box::after {
+  position: absolute;
+  bottom: 1px;
+  width: 0;
+  height: 2px;
+  background-color: #757575;
+  content: "";
+  transition-duration: 0.2s;
+  transition-property: width;
+}
+
+.label-box::before {
+  left: 50%;
+}
+
+.label-box::after {
+  right: 50%;
+}
+
+input:focus ~ .label-box::before,
+input:focus ~ .label-box::after {
+  width: 50%;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 270px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  font-size: 18px;
+}
+label {
+  position: absolute;
+  top: -36px;
+  color: #757575;
+  font-size: 18px;
+  transition: 0.2s ease all;
+  pointer-events: none;
+}
+
+input:focus ~ .label-box label,
+input:valid ~ .label-box label {
+  font-size: 14px;
+  transform: translateY(-20px);
+}
