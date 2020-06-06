@@ -43,7 +43,7 @@
     <meta name="msapplication-navbutton-color" content="#4285f4">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="assets/css/styles.css?v=2.1">
+    <link rel="stylesheet" href="assets/css/styles.css?v=2.2">
 </head>
 
 <body>
@@ -502,7 +502,7 @@
             <div class="footer__wraper">
                 <div class="footer__column footer__social">
                     <h3>Всегда на связи:</h3>
-                    <a href="viber://chat?number=+375259511417"><svg viewBox="0 0 252 252" fill="none">
+                    <a href="viber://chat?number=%2B375259511417"><svg viewBox="0 0 252 252" fill="none">
                             <path
                                 d="M211.7 36L36 212.11A124.2 124.2 0 00123.5 248c68.76 0 124.5-55.65 124.5-124.29 0-34.23-13.87-65.23-36.3-87.71z"
                                 fill="#9448F7" />
@@ -594,7 +594,68 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/libs/particlesjs/particles.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140820558-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-140820558-2');
+    </script>
+
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode
+                .insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(64638322, "init", {
+            clickmap: false,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140820558-2"></script>
+    <script>
+        let fired = false;
+        window.addEventListener('scroll', () => {
+            if (fired === false) {
+                fired = true;
+                setTimeout(() => {
+                    (function (m, e, t, r, i, k, a) {
+                        m[i] = m[i] || function () {
+                            (m[i].a = m[i].a || []).push(arguments)
+                        };
+                        m[i].l = 1 * new Date();
+                        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k
+                            .src = r, a.parentNode.insertBefore(k, a)
+                    })
+                    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+                    ym(64638322, "init", {
+                        clickmap: false,
+                        trackLinks: true,
+                        accurateTrackBounce: true
+                    });
+                    window.dataLayer = window.dataLayer || [];
+
+                    function gtag() {
+                        dataLayer.push(arguments);
+                    }
+                    gtag('js', new Date());
+                    gtag('config', 'UA-140820558-2');
+                }, 1000)
+            }
+        });
+    </script> -->
 
     <!-- Полифил, позволяющий обеспечивать базовые стили HTML5 для Internet Explorer 6-8, Safari 4.x, Firefox 3.x. и iPhone 3.x.  -->
     <!--[if lt IE 9]>
