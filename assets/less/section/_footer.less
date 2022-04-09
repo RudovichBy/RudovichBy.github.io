@@ -1,0 +1,74 @@
+.footer {
+	background-color: @bg-color;
+	color: #fff;
+	font-family: @font-family-light;
+	padding-top: 50px;
+}
+
+.kontakty__column {
+	.row-flex();
+	padding-bottom: 30px;
+	justify-content: center;
+}
+
+.kontakty__title {
+	.col();
+	.size(12);
+	letter-spacing: 1.3px;
+	font-size: 20px;
+	margin-bottom: 30px;
+	.md-block({
+	font-size: 30px;
+	});
+}
+
+.kontakty__card {
+	.col();
+	.size(10);
+	.size-sm(5);
+	.size-md(3);
+	padding: 20px 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	background-color: rgba(#0000, 0.5);
+	font-size: 18px;
+	font-family: @font-family-light;
+	letter-spacing: 1.1px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: all 0.3s ease-in;
+	&:last-child{
+		// margin-bottom: 0;
+	}
+	
+	&:hover {
+		background-color: rgba(#0000, 0.2);
+		color: @btn-color;
+		
+		svg {
+			transform: scale(1.05);
+		}
+	}
+}
+.kontakty__card svg{
+	width: 70px;
+	margin-bottom: 15px;
+	// transition: all 0.5s ease-in;
+
+}
+
+.copyright {
+	.row-flex();
+	padding: 30px 0;
+	border-top: 1px solid @btn-color;
+
+	p {
+		.col();
+		.size(12);
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+}

@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /*.php$
-Disallow: /*.js$
-Disallow: /portfolio/$
-Disallow: /portfolio/**/*.*$
-Crawl-delay: 5
-Host: https://loosemaster.ru
-Sitemap: https://loosemaster.ru/sitemap.xml

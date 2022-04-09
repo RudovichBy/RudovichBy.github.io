@@ -1,0 +1,173 @@
+.preview {
+	padding: 0;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	font-family: @font-family-light;
+	color: #717171;
+
+	.lg-block( {
+			padding-top: 50px;
+			padding-bottom: 100px;
+		}
+
+	);
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center
+	}
+
+	&__wraper {
+		.row-flex();
+		justify-content: center;
+		// align-items: center;
+		padding-top: 50px;
+
+		.lg-block( {
+				justify-content: space-between;
+			}
+
+		);
+	}
+
+	&__title {
+		.col();
+		.size(12);
+		text-align: center;
+		display: inline-block;
+		margin-top: 30px;
+		font-size: 28px;
+		line-height: 30px;
+		letter-spacing: 1.7px;
+		word-spacing: 7px;
+		color: #000;
+		text-transform: uppercase;
+		font-size: 30px;
+
+		.sm-block( {
+				.size(8);
+				margin-top: 100px;
+				font-size: 30px;
+			}
+
+		);
+
+		.md-block( {
+				.size(6);
+			}
+
+		);
+
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 100%;
+			top: 0;
+			border-top: 1px solid #000;
+		}
+	}
+
+	&__subttitle {
+		// margin-left: 0;
+		margin-bottom: 20px;
+		letter-spacing: 1.3px;
+		text-transform: uppercase;
+		font-size: 24px;
+
+		.lg-block( {
+				font-size: 26px;
+				// margin-bottom: 30px;
+			}
+
+		);
+	}
+
+	&__content {
+		.col();
+		.size(12);
+		.size-sm(7.5);
+		.size-md(8);
+		.size-lg(6);
+		.size-xl(7);
+		font-size: 18px;
+
+		.lg-block( {
+				font-size: 20px;
+			}
+
+		);
+	}
+
+	&__img {
+		.col();
+		.size(12);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-bottom: 30px;
+		.lg(padding-bottom, 50px);
+
+		img {
+			// width: 100%;
+			background-color: transparent;
+			width: 300px;
+			height: 360px;
+			margin: 20px 10px;
+			object-fit: cover;
+			object-position: center;
+			box-shadow: 5px 5px 30px rgba(0, 82, 194, 0.8);
+
+			// .md(margin, 0 30px)
+			.lg-block( {
+					margin: 0 30px;
+					width: 340px;
+					height: 380px;
+
+				}
+
+			);
+		}
+	}
+
+	&__list {
+		.col();
+		.size(12);
+		.size-sm(4.5);
+		.size-md(4);
+		.size-lg(5);
+
+		ul {
+			font-size: 18px;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			padding-left: 18px;
+
+			li {
+				margin-bottom: 10px;
+				position: relative;
+
+				&:before {
+					position: absolute;
+					left: -20px;
+					top: 8px;
+					content: "";
+					display: inline-block;
+					width: 16px;
+					height: 8px;
+					border: 1px solid;
+					border-color: #00bad2;
+					border-top-style: none;
+					border-right-style: none;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+
+	&__link {
+		font-size: 20px;
+	}
+}
