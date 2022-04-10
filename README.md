@@ -1,3 +1,3 @@
-# tuman1122.github.io
+# RudovichBy.github.io
 ## Сайт Front-end разработчика Олега Рудовича
 portfolio site
