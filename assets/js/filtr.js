@@ -7,11 +7,11 @@
 			btnSuit = menu.querySelector('.suit'),
 			btnCss = menu.querySelector('.css__practick'),
 			btnJs = menu.querySelector('.js__practick'),
-			btnModx = menu.querySelector('.modx'),
+			btnModx = menu.querySelector('.cms'),
 			wrapper = document.querySelector('.main__portfolio__wrapper'),
 			markAll = wrapper.querySelectorAll('.all'),
 			markJs = wrapper.querySelectorAll('.js__practick'),
-			markModx = wrapper.querySelectorAll('.modx'),
+			markModx = wrapper.querySelectorAll('.cms'),
 			markSuit = wrapper.querySelectorAll('.suit'),
 			markCss = wrapper.querySelectorAll('.css__practick');
 		// no = document.querySelector('.portfolio-no');
